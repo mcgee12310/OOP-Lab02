@@ -1,0 +1,9 @@
+6.1 Questions:
+-	What happens if users choose “Cancel”?
+-> 	nếu người dùng chọn "Cancel"option sẽ có giá trị là JOptionPane.CANCEL_OPTION, 
+	do đó nếu người dùng chọn "Cancel", dòng JOptionPane.showMessageDialog sẽ hiển thị như thể người dùng chọn "No", 
+	bởi vì điều kiện option == JOptionPane.YES_OPTION chỉ so sánh với giá trị "Yes".
+-	How to customize the options to users, 
+	e.g. only two options: “Yes” and “No”, OR “I do” and “I don’t” 
+	(Suggestion: Use Javadocs or using Eclipse/Netbean IDE help). 
+-> 	có thể tùy chỉnh các nút trên hộp thoại bằng cách sử dụng phương thức showOptionDialog của lớp JOptionPane
