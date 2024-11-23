@@ -1,4 +1,6 @@
-package Aims;
+package hust.soict.dsai.aims.store;
+
+import hust.soict.dsai.aims.disc.DigitalVideoDisc;
 
 public class Store {
 	public static final int MAX_DVDs = 1000005;;
