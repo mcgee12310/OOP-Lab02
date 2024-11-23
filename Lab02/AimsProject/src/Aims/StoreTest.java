@@ -1,27 +1,27 @@
 package Aims;
 
-
-public class CartTest {
+public class StoreTest {
 	public static void main(String[] args) {
-		//Create a new cart
-		Cart cart = new Cart();
+		//Create a new store
+		Store store = new Store();
 		
 		//Create new dvd objects and add them to the cart 
 		DigitalVideoDisc dvd1 = new DigitalVideoDisc ("The Lion King", "Animation", "Roger Allers", 87, 19.95f); 
-		cart.addDigitalVideoDisc (dvd1);
+		store.addDVD(dvd1);
 		
 		DigitalVideoDisc dvd2 = new DigitalVideoDisc ("Star Wars", "Science Fiction", "George Lucas", 87, 24.95f); 
-		cart.addDigitalVideoDisc (dvd2);
+		store.addDVD(dvd2);
 		
 		DigitalVideoDisc dvd3 = new DigitalVideoDisc("Aladin", "Animation", 18.99f);
-		cart.addDigitalVideoDisc (dvd3);
+		store.addDVD(dvd3);
 		
-		//Test the print method
-		cart.printCart();
+		store.printStore();
 		
-		//To-do: Test the search methods here		
-		cart.searchCart("Aladin");
-		cart.searchCart("Star Wars");
-		cart.searchCart("Lalaland");
+		store.removeDVD(dvd1);
+		store.printStore();
+		
+		DigitalVideoDisc dvd4 = new DigitalVideoDisc("Soul of Cinder", "Game", "Miyazaki", 99);
+		store.addDVD(dvd4);
+		store.printStore();
 	}
-}
+}	
