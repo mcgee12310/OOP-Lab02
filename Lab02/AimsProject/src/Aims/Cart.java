@@ -70,4 +70,20 @@ public class Cart {
         }
         return totalCost;
     }
+    
+    public void printCart() {
+    	System.out.println("***********************CART***********************");
+    	System.out.println("Ordered Items:");
+    	
+    	int id = 1;
+    	for (DigitalVideoDisc disc : itemsOrdered) {   
+    		if(disc == null) break;
+    		System.out.println(id + ". DVD - " + disc.getTitle() + " - " + disc.getCategory() + " - " + disc.getDirector() + " - " + disc.getLength() + ": " + disc.getCost() + " $");
+    		id++;
+    		
+	    }
+    	
+    	System.out.println("Total cost: " + totalCost());
+    	System.out.println("***************************************************");	
+    }
 }
