@@ -1,0 +1,7 @@
+- Question: Is JAVA a Pass by Value or a Pass by Reference programming language? 
+=> Java là ngôn ngữ lập trình Pass by Value. 
+=> Do Java khi truyền giá trị biến vào hàm thì truyền dưới dạng bản sao của biến
+có giá trị bằng biến gốc nên mọi thay đổi trong hàm chỉ ảnh hưởng đến bản sao này,
+không ảnh hưởng đến giá trị biến gốc.
+=> Java khi truyền object vào hàm sẽ truyền con trỏ trỏ đến object -> thay đổi
+trong hàm sẽ thay đổi object gốc.
