@@ -1,5 +1,7 @@
 package hust.soict.dsai.test.cart;
 
+import java.util.*;
+
 import hust.soict.dsai.aims.cart.Cart;
 import hust.soict.dsai.aims.media.DigitalVideoDisc;
 import hust.soict.dsai.aims.media.Media;
@@ -19,6 +21,9 @@ public class CartTest {
         cart.addItem(dvd3);
 
         // Display cart contents
+        cart.sortByTitle();
+        cart.printCart();
+        cart.sortByCost();
         cart.printCart();
 
         // Calculate total cost
@@ -30,5 +35,16 @@ public class CartTest {
 
         // Search for an item
         cart.searchCart("Aladdin");
+        
+
+		List<Media> mediae = new ArrayList<Media>();
+		// create some media here
+		// for example: cd, dvd, book
+		mediae.add(dvd1);
+		mediae.add(dvd2);
+		mediae.add(dvd3);
+		for (Media m : mediae) {
+			System.out.println(m.toString());
+		}
     }
 }

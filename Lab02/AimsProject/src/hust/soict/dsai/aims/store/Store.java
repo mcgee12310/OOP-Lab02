@@ -39,20 +39,21 @@ public class Store {
     	System.out.println("***************************************************");	
     }
     
-    public void searchStore(String title) {
+    public Media searchStore(String title) {
     	System.out.println("***********************STORE***********************");
     	System.out.println("Searching Items: " + title);
-    	
+    	Media found = null;
     	for (Media item : itemsInStore) {   
     		if(item == null) {
     			System.out.println("NOT FOUND");
-    			break;
+    			return null;
     		}
-    		if(item.getTitle() == title) {
+    		if(item.getTitle().equalsIgnoreCase(title)) {
     			System.out.println("Item - " + item.getTitle() + " - " + item.getCategory() + " - " + item.getCost() + " $");
+    			found = item;
     			break;
     		}    			
 	    }
-    	System.out.println("***************************************************");	
+    	return found;
     }
 }
