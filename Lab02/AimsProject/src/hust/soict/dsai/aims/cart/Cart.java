@@ -44,14 +44,29 @@ public class Cart {
         }
     }
     
-    public void searchCart(String title) {
+    public Media searchCart(String title) {
         for (Media item : itemsOrdered) {
             if (item.getTitle().equalsIgnoreCase(title)) {
             	System.out.println("- " + item.getTitle());
-            	return;
+            	return item;
             }
         }
         System.out.println("NOT FOUND");
+        return null;
+    }
+    
+    public void deleteCart() {
+    	itemsOrdered.clear();
+    }
+    
+    // Sort by title 
+    public void sortByTitle() {
+        Collections.sort(itemsOrdered, Media.COMPARE_BY_TITLE_COST);
+    }
+
+    // Sort by cost
+    public void sortByCost() {
+        Collections.sort(itemsOrdered, Media.COMPARE_BY_COST_TITLE);
     }
 	
 }

@@ -1,0 +1,11 @@
+- Lớp Media nên triển khai giao diện Comparable, vì đây là lớp cha
+của các lớp: Book, Disc và lớp ông của: CompactDisc, DigitalVideoDisc.
+Việc triển khai Comparable lớp Media sẽ cho chúng kế thừa Comparable.
+- Phương thức compareTo() nên được cài đặt theo cách:
+	+ So sánh title theo bảng chữ cái
+	+ Nếu title trùng nhau, so sánh theo giá
+- Comparable chỉ cho phép Override một quy tắc sắp xếp duy nhất thông
+qua phương thức compareTo(). Do đó, không thể có hai quy tắc sắp xếp 
+khác nhau (theo title rồi giá và theo giá rồi title).
+- Nếu lớp DigitalVideoDisc cần quy tắc sắp xếp riêng (by title, then decreasing length, then cost), 
+có thể Override phương thức compareTo() riêng cho lớp DigitalVideoDisc.
