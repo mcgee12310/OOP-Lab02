@@ -1,4 +1,4 @@
-package hust.soict.dsai.aims.test.playable;
+package hust.soict.dsai.test.playable;
 
 import hust.soict.dsai.aims.media.CompactDisc;
 import hust.soict.dsai.aims.media.DigitalVideoDisc;

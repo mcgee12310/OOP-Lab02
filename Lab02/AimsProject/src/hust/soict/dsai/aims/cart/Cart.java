@@ -16,7 +16,7 @@ public class Cart {
         return totalCost;
     }
 	
-    public void addMedia(Media item) {
+    public void addItem(Media item) {
         if (itemsOrdered.size() < MAX_NUMBERS_ORDERED) {
             itemsOrdered.add(item);
             System.out.println(item.getTitle() + " has been added to the cart.");
@@ -25,7 +25,7 @@ public class Cart {
         }
     }
 
-    public void removeMedia(Media item) {
+    public void removeItem(Media item) {
         if (itemsOrdered.remove(item)) {
             System.out.println(item.getTitle() + " has been removed from the cart.");
         } else {
