@@ -14,9 +14,9 @@ public class CartTest {
         Media dvd3 = new DigitalVideoDisc("Aladdin", "Animation", 18.99f);
 
         // Add items to the cart
-        cart.addMedia(dvd1);
-        cart.addMedia(dvd2);
-        cart.addMedia(dvd3);
+        cart.addItem(dvd1);
+        cart.addItem(dvd2);
+        cart.addItem(dvd3);
 
         // Display cart contents
         cart.printCart();
@@ -25,7 +25,7 @@ public class CartTest {
         System.out.println("Total cost: " + cart.totalCost());
 
         // Remove an item
-        cart.removeMedia(dvd2);
+        cart.removeItem(dvd2);
         cart.printCart();
 
         // Search for an item
