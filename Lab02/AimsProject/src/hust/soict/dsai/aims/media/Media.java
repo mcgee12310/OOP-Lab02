@@ -1,5 +1,7 @@
 package hust.soict.dsai.aims.media;
 
+import java.util.*;
+
 public abstract class Media {
 	
 	private int id;
@@ -38,6 +40,18 @@ public abstract class Media {
 	public void setCost(float cost) {
 		this.cost = cost;
 	}
+	
+	@Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true; // Same reference
+        }
+        if (obj == null || getClass() != obj.getClass()) {
+            return false; // Null or different class
+        }
+        Media other = (Media) obj; // Cast to Media
+        return Objects.equals(this.title, other.title); // Compare titles
+    }
 
 	public Media() {
 		// TODO Auto-generated constructor stub
