@@ -37,7 +37,11 @@ public class Book extends Media {
 		authors.forEach(author -> System.out.println("- " + author));
 	} 
 
-	public Book() {
+	public Book(String title, String category, float cost) {
 		// TODO Auto-generated constructor stub	
+		super();
+		this.setTitle(title);
+		this.setCategory(category);
+		this.setCost(cost);
 	}
 }

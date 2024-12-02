@@ -22,7 +22,7 @@ public class TestPlayable {
         System.out.println();
 
         // Test CompactDisc
-        CompactDisc cd = new CompactDisc();
+        CompactDisc cd = new CompactDisc("Thriller", "Pop", 15.99f, "Michael Jackson");
         cd.setTitle("CD 1");
         cd.addTrack(track1);
         cd.addTrack(track2);
