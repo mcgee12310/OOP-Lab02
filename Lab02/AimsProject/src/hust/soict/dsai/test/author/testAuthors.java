@@ -4,7 +4,7 @@ import hust.soict.dsai.aims.media.Book;
 
 public class testAuthors {
 	public static void main(String[] args) {
-		Book book = new Book();
+		Book book = new Book("Twightlinght", "Vampire", 100);
 
         // Thêm tác giả vào danh sách
         System.out.println("=== Testing addAuthor() ===");

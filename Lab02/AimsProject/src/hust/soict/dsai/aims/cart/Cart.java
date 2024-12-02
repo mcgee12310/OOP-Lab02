@@ -39,7 +39,7 @@ public class Cart {
         } else {
             System.out.println("Cart:");
             for (Media item : itemsOrdered) {
-                System.out.println("- " + item.getTitle());
+                System.out.println("- " + item.getTitle() + " - " + item.getCategory() + " - " + item.getCost());
             }
         }
     }

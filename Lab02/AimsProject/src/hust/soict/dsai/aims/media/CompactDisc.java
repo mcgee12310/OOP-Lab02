@@ -68,8 +68,13 @@ public class CompactDisc extends Disc implements Playable{
         }
     }
 
-	public CompactDisc() {
+	public CompactDisc(String title, String category, float cost, String artist) {
 		// TODO Auto-generated constructor stub
+		super();
+		this.setTitle(title);
+		this.setCategory(category);
+		this.setCost(cost);
+		this.artist = artist;
 	}
 
 }

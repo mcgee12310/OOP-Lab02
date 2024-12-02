@@ -6,7 +6,7 @@ import hust.soict.dsai.aims.media.Track;
 public class TestCompactDisc {
 	public static void main(String[] args) {
 		// Tạo đối tượng CompactDisc
-		CompactDisc cd = new CompactDisc();
+		CompactDisc cd = new CompactDisc("Thriller", "Pop", 15.99f, "Michael Jackson");
 		
 		// Tạo các Track
 		Track track1 = new Track("Track 1", 300);
