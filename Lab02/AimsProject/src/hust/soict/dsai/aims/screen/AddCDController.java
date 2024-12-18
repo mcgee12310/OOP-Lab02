@@ -34,35 +34,16 @@ public class AddCDController {
             // Add the new CD to the store
             Aims.store.addMedia(cd);
 
-            // Show success alert using JavaFX
-            showAlert(Alert.AlertType.INFORMATION, "Update Store", "CD Added Successfully", 
-                      "The CD '" + cd.getTitle() + "' has been added to the store.");
-
-            // Refresh Store Screen
-            refreshStoreScreen();
+            new StoreScreen(Aims.store);
 
         } catch (NumberFormatException e) {
-            // Handle invalid cost input
-            showAlert(Alert.AlertType.ERROR, "Input Error", "Invalid Cost", "Please enter a valid number for the cost.");
-        } catch (Exception e) {
-            e.printStackTrace();
-            showAlert(Alert.AlertType.ERROR, "Error", "Unexpected Error", "Something went wrong.");
+            // Handle invalid input for cost
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Input Error");
+            alert.setHeaderText("Invalid Input");
+            alert.setContentText("Please enter a valid number for the cost.");
+            alert.showAndWait();
         }
-    }
 
-    // Helper method to show alerts
-    private void showAlert(Alert.AlertType type, String title, String header, String content) {
-        Alert alert = new Alert(type);
-        alert.setTitle(title);
-        alert.setHeaderText(header);
-        alert.setContentText(content);
-        alert.showAndWait();
-    }
-
-    // Helper method to refresh the StoreScreen
-    private void refreshStoreScreen() {
-        // Assuming you have a method to refresh the store UI dynamically
-        StoreScreen storeScreen = new StoreScreen(Aims.store);
-        storeScreen.setVisible(true);
     }
 }

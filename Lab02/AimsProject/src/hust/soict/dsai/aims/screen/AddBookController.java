@@ -36,6 +36,9 @@ public class AddBookController {
             alert.setHeaderText("Book Added Successfully");
             alert.setContentText("The book '" + book.getTitle() + "' has been added to the store.");
             alert.showAndWait();
+            
+            new StoreScreen(Aims.store);
+            
 
             // Clear input fields
             tfTitle.clear();

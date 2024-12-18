@@ -42,12 +42,16 @@ public class AddDVDController {
             // Add the DVD to the store
             Aims.store.addMedia(dvd);
             
+            
+            
          // Show success message
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("Store Update");
             alert.setHeaderText("Book Added Successfully");
             alert.setContentText("The book '" + dvd.getTitle() + "' has been added to the store.");
             alert.showAndWait();
+            
+            new StoreScreen(Aims.store);
 
             // Clear input fields
             tfTitle.clear();
