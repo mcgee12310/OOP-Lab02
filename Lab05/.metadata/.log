@@ -1,535 +1,57 @@
-!SESSION 2024-12-17 18:13:36.100 -----------------------------------------------
+!SESSION 2024-12-18 11:44:57.372 -----------------------------------------------
 eclipse.buildId=4.33.0.20240905-0613
 java.version=21.0.4
 java.vendor=Eclipse Adoptium
 BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
 Framework arguments:  -product org.eclipse.epp.package.jee.product
-Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data C:\Users\HUNG\Downloads\IT\OOP-Labs\Lab05
 
-!ENTRY ch.qos.logback.classic 1 0 2024-12-17 18:13:39.744
+!ENTRY ch.qos.logback.classic 1 0 2024-12-18 11:44:59.792
 !MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
 
-!ENTRY ch.qos.logback.classic 1 0 2024-12-17 18:13:48.786
+!ENTRY ch.qos.logback.classic 1 0 2024-12-18 11:45:01.226
 !MESSAGE Logback config file: C:\Users\HUNG\Downloads\IT\OOP-Labs\Lab05\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
 
-!ENTRY org.eclipse.egit.ui 2 0 2024-12-17 18:13:57.458
+!ENTRY org.eclipse.egit.ui 2 0 2024-12-18 11:45:07.589
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
 user global configuration and to define the default location to store repositories: 'C:\Users\HUNG'. If this is
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
 
-!ENTRY org.eclipse.epp.mpc.ui 4 0 2024-12-17 18:14:26.967
-!MESSAGE Cannot open Eclipse Marketplace
-!STACK 1
-org.eclipse.core.runtime.CoreException: Cannot install remote marketplace locations: ExceptionInInitializerError
-	at org.eclipse.epp.internal.mpc.ui.commands.AbstractMarketplaceWizardCommand.createConfiguration(AbstractMarketplaceWizardCommand.java:105)
-	at org.eclipse.epp.internal.mpc.ui.commands.MarketplaceWizardCommand.createConfiguration(MarketplaceWizardCommand.java:64)
-	at org.eclipse.epp.internal.mpc.ui.commands.AbstractMarketplaceWizardCommand.execute(AbstractMarketplaceWizardCommand.java:67)
-	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:277)
-	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:98)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:299)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:233)
-	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:174)
-	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:165)
-	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:488)
-	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:485)
-	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:204)
-	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.executeItem(HandledContributionItem.java:444)
-	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.handleWidgetSelection(AbstractContributionItem.java:442)
-	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.lambda$2(AbstractContributionItem.java:464)
-	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4326)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1174)
-	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4124)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3712)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
-Caused by: java.lang.ExceptionInInitializerError
-	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.<clinit>(SSLConnectionSocketFactory.java:151)
-	at org.apache.http.client.fluent.Executor.<clinit>(Executor.java:78)
-	at org.eclipse.userstorage.oauth.OAuthCredentialsProvider.createExecutor(OAuthCredentialsProvider.java:73)
-	at org.eclipse.userstorage.oauth.OAuthCredentialsProvider.<init>(OAuthCredentialsProvider.java:30)
-	at org.eclipse.userstorage.oauth.OAuthCredentialsProvider.<init>(OAuthCredentialsProvider.java:68)
-	at org.eclipse.userstorage.oauth.EclipseOAuthCredentialsProvider.<init>(EclipseOAuthCredentialsProvider.java:138)
-	at org.eclipse.epp.internal.mpc.core.service.MarketplaceStorageService.createStorage(MarketplaceStorageService.java:122)
-	at org.eclipse.epp.internal.mpc.core.service.MarketplaceStorageService.getStorage(MarketplaceStorageService.java:145)
-	at org.eclipse.epp.internal.mpc.core.service.MarketplaceStorageService.activate(MarketplaceStorageService.java:240)
-	at org.eclipse.epp.internal.mpc.core.ServiceLocator.registerStorageService(ServiceLocator.java:345)
-	at org.eclipse.epp.internal.mpc.core.ServiceLocator.registerFavoritesService(ServiceLocator.java:319)
-	at org.eclipse.epp.internal.mpc.core.service.DefaultCatalogService.registerDynamicFavoritesService(DefaultCatalogService.java:81)
-	at org.eclipse.epp.internal.mpc.core.service.DefaultCatalogService.registerDynamicFavoritesService(DefaultCatalogService.java:71)
-	at org.eclipse.epp.internal.mpc.core.service.DefaultCatalogService.listCatalogs(DefaultCatalogService.java:56)
-	at org.eclipse.epp.internal.mpc.ui.commands.AbstractMarketplaceWizardCommand.lambda$0(AbstractMarketplaceWizardCommand.java:169)
-	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
-Caused by: org.apache.commons.logging.LogConfigurationException: The chosen LogFactory implementation does not extend LogFactory. Please check your configuration. (Caused by java.lang.ClassCastException: The application has specified that a custom LogFactory implementation should be used but Class 'org.apache.commons.logging.impl.LogFactoryImpl' cannot be converted to 'org.apache.commons.logging.LogFactory'. The conflict is caused by the presence of multiple LogFactory classes in incompatible classloaders. Background can be found in http://commons.apache.org/logging/tech.html. If you have not explicitly specified a custom LogFactory then it is likely that the container has set one without your knowledge. In this case, consider using the commons-logging-adapters.jar file or specifying the standard LogFactory from the command line. Help can be found @http://commons.apache.org/logging/troubleshooting.html.)
-	at org.apache.commons.logging.LogFactory.createFactory(LogFactory.java:1154)
-	at org.apache.commons.logging.LogFactory$2.run(LogFactory.java:960)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:319)
-	at org.apache.commons.logging.LogFactory.newFactory(LogFactory.java:957)
-	at org.apache.commons.logging.LogFactory.getFactory(LogFactory.java:624)
-	at org.apache.commons.logging.LogFactory.getLog(LogFactory.java:655)
-	at org.apache.http.conn.ssl.AbstractVerifier.<init>(AbstractVerifier.java:61)
-	at org.apache.http.conn.ssl.AllowAllHostnameVerifier.<init>(AllowAllHostnameVerifier.java:44)
-	at org.apache.http.conn.ssl.AllowAllHostnameVerifier.<clinit>(AllowAllHostnameVerifier.java:46)
-	... 16 more
-Caused by: java.lang.ClassCastException: The application has specified that a custom LogFactory implementation should be used but Class 'org.apache.commons.logging.impl.LogFactoryImpl' cannot be converted to 'org.apache.commons.logging.LogFactory'. The conflict is caused by the presence of multiple LogFactory classes in incompatible classloaders. Background can be found in http://commons.apache.org/logging/tech.html. If you have not explicitly specified a custom LogFactory then it is likely that the container has set one without your knowledge. In this case, consider using the commons-logging-adapters.jar file or specifying the standard LogFactory from the command line. Help can be found @http://commons.apache.org/logging/troubleshooting.html.
-	at org.apache.commons.logging.LogFactory.createFactory(LogFactory.java:1108)
-	... 24 more
-Contains: ExceptionInInitializerError
-java.lang.ExceptionInInitializerError
-	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.<clinit>(SSLConnectionSocketFactory.java:151)
-	at org.apache.http.client.fluent.Executor.<clinit>(Executor.java:78)
-	at org.eclipse.userstorage.oauth.OAuthCredentialsProvider.createExecutor(OAuthCredentialsProvider.java:73)
-	at org.eclipse.userstorage.oauth.OAuthCredentialsProvider.<init>(OAuthCredentialsProvider.java:30)
-	at org.eclipse.userstorage.oauth.OAuthCredentialsProvider.<init>(OAuthCredentialsProvider.java:68)
-	at org.eclipse.userstorage.oauth.EclipseOAuthCredentialsProvider.<init>(EclipseOAuthCredentialsProvider.java:138)
-	at org.eclipse.epp.internal.mpc.core.service.MarketplaceStorageService.createStorage(MarketplaceStorageService.java:122)
-	at org.eclipse.epp.internal.mpc.core.service.MarketplaceStorageService.getStorage(MarketplaceStorageService.java:145)
-	at org.eclipse.epp.internal.mpc.core.service.MarketplaceStorageService.activate(MarketplaceStorageService.java:240)
-	at org.eclipse.epp.internal.mpc.core.ServiceLocator.registerStorageService(ServiceLocator.java:345)
-	at org.eclipse.epp.internal.mpc.core.ServiceLocator.registerFavoritesService(ServiceLocator.java:319)
-	at org.eclipse.epp.internal.mpc.core.service.DefaultCatalogService.registerDynamicFavoritesService(DefaultCatalogService.java:81)
-	at org.eclipse.epp.internal.mpc.core.service.DefaultCatalogService.registerDynamicFavoritesService(DefaultCatalogService.java:71)
-	at org.eclipse.epp.internal.mpc.core.service.DefaultCatalogService.listCatalogs(DefaultCatalogService.java:56)
-	at org.eclipse.epp.internal.mpc.ui.commands.AbstractMarketplaceWizardCommand.lambda$0(AbstractMarketplaceWizardCommand.java:169)
-	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
-Caused by: org.apache.commons.logging.LogConfigurationException: The chosen LogFactory implementation does not extend LogFactory. Please check your configuration. (Caused by java.lang.ClassCastException: The application has specified that a custom LogFactory implementation should be used but Class 'org.apache.commons.logging.impl.LogFactoryImpl' cannot be converted to 'org.apache.commons.logging.LogFactory'. The conflict is caused by the presence of multiple LogFactory classes in incompatible classloaders. Background can be found in http://commons.apache.org/logging/tech.html. If you have not explicitly specified a custom LogFactory then it is likely that the container has set one without your knowledge. In this case, consider using the commons-logging-adapters.jar file or specifying the standard LogFactory from the command line. Help can be found @http://commons.apache.org/logging/troubleshooting.html.)
-	at org.apache.commons.logging.LogFactory.createFactory(LogFactory.java:1154)
-	at org.apache.commons.logging.LogFactory$2.run(LogFactory.java:960)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:319)
-	at org.apache.commons.logging.LogFactory.newFactory(LogFactory.java:957)
-	at org.apache.commons.logging.LogFactory.getFactory(LogFactory.java:624)
-	at org.apache.commons.logging.LogFactory.getLog(LogFactory.java:655)
-	at org.apache.http.conn.ssl.AbstractVerifier.<init>(AbstractVerifier.java:61)
-	at org.apache.http.conn.ssl.AllowAllHostnameVerifier.<init>(AllowAllHostnameVerifier.java:44)
-	at org.apache.http.conn.ssl.AllowAllHostnameVerifier.<clinit>(AllowAllHostnameVerifier.java:46)
-	... 16 more
-Caused by: java.lang.ClassCastException: The application has specified that a custom LogFactory implementation should be used but Class 'org.apache.commons.logging.impl.LogFactoryImpl' cannot be converted to 'org.apache.commons.logging.LogFactory'. The conflict is caused by the presence of multiple LogFactory classes in incompatible classloaders. Background can be found in http://commons.apache.org/logging/tech.html. If you have not explicitly specified a custom LogFactory then it is likely that the container has set one without your knowledge. In this case, consider using the commons-logging-adapters.jar file or specifying the standard LogFactory from the command line. Help can be found @http://commons.apache.org/logging/troubleshooting.html.
-	at org.apache.commons.logging.LogFactory.createFactory(LogFactory.java:1108)
-	... 24 more
-!SUBENTRY 1 org.eclipse.epp.mpc.core 4 0 2024-12-17 18:14:26.968
-!MESSAGE Cannot install remote marketplace locations: ExceptionInInitializerError
-!STACK 0
-java.lang.ExceptionInInitializerError
-	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.<clinit>(SSLConnectionSocketFactory.java:151)
-	at org.apache.http.client.fluent.Executor.<clinit>(Executor.java:78)
-	at org.eclipse.userstorage.oauth.OAuthCredentialsProvider.createExecutor(OAuthCredentialsProvider.java:73)
-	at org.eclipse.userstorage.oauth.OAuthCredentialsProvider.<init>(OAuthCredentialsProvider.java:30)
-	at org.eclipse.userstorage.oauth.OAuthCredentialsProvider.<init>(OAuthCredentialsProvider.java:68)
-	at org.eclipse.userstorage.oauth.EclipseOAuthCredentialsProvider.<init>(EclipseOAuthCredentialsProvider.java:138)
-	at org.eclipse.epp.internal.mpc.core.service.MarketplaceStorageService.createStorage(MarketplaceStorageService.java:122)
-	at org.eclipse.epp.internal.mpc.core.service.MarketplaceStorageService.getStorage(MarketplaceStorageService.java:145)
-	at org.eclipse.epp.internal.mpc.core.service.MarketplaceStorageService.activate(MarketplaceStorageService.java:240)
-	at org.eclipse.epp.internal.mpc.core.ServiceLocator.registerStorageService(ServiceLocator.java:345)
-	at org.eclipse.epp.internal.mpc.core.ServiceLocator.registerFavoritesService(ServiceLocator.java:319)
-	at org.eclipse.epp.internal.mpc.core.service.DefaultCatalogService.registerDynamicFavoritesService(DefaultCatalogService.java:81)
-	at org.eclipse.epp.internal.mpc.core.service.DefaultCatalogService.registerDynamicFavoritesService(DefaultCatalogService.java:71)
-	at org.eclipse.epp.internal.mpc.core.service.DefaultCatalogService.listCatalogs(DefaultCatalogService.java:56)
-	at org.eclipse.epp.internal.mpc.ui.commands.AbstractMarketplaceWizardCommand.lambda$0(AbstractMarketplaceWizardCommand.java:169)
-	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
-Caused by: org.apache.commons.logging.LogConfigurationException: The chosen LogFactory implementation does not extend LogFactory. Please check your configuration. (Caused by java.lang.ClassCastException: The application has specified that a custom LogFactory implementation should be used but Class 'org.apache.commons.logging.impl.LogFactoryImpl' cannot be converted to 'org.apache.commons.logging.LogFactory'. The conflict is caused by the presence of multiple LogFactory classes in incompatible classloaders. Background can be found in http://commons.apache.org/logging/tech.html. If you have not explicitly specified a custom LogFactory then it is likely that the container has set one without your knowledge. In this case, consider using the commons-logging-adapters.jar file or specifying the standard LogFactory from the command line. Help can be found @http://commons.apache.org/logging/troubleshooting.html.)
-	at org.apache.commons.logging.LogFactory.createFactory(LogFactory.java:1154)
-	at org.apache.commons.logging.LogFactory$2.run(LogFactory.java:960)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:319)
-	at org.apache.commons.logging.LogFactory.newFactory(LogFactory.java:957)
-	at org.apache.commons.logging.LogFactory.getFactory(LogFactory.java:624)
-	at org.apache.commons.logging.LogFactory.getLog(LogFactory.java:655)
-	at org.apache.http.conn.ssl.AbstractVerifier.<init>(AbstractVerifier.java:61)
-	at org.apache.http.conn.ssl.AllowAllHostnameVerifier.<init>(AllowAllHostnameVerifier.java:44)
-	at org.apache.http.conn.ssl.AllowAllHostnameVerifier.<clinit>(AllowAllHostnameVerifier.java:46)
-	... 16 more
-Caused by: java.lang.ClassCastException: The application has specified that a custom LogFactory implementation should be used but Class 'org.apache.commons.logging.impl.LogFactoryImpl' cannot be converted to 'org.apache.commons.logging.LogFactory'. The conflict is caused by the presence of multiple LogFactory classes in incompatible classloaders. Background can be found in http://commons.apache.org/logging/tech.html. If you have not explicitly specified a custom LogFactory then it is likely that the container has set one without your knowledge. In this case, consider using the commons-logging-adapters.jar file or specifying the standard LogFactory from the command line. Help can be found @http://commons.apache.org/logging/troubleshooting.html.
-	at org.apache.commons.logging.LogFactory.createFactory(LogFactory.java:1108)
-	... 24 more
-!SUBENTRY 2 org.eclipse.epp.mpc.core 4 0 2024-12-17 18:14:26.969
-!MESSAGE ExceptionInInitializerError
-!STACK 0
-java.lang.ExceptionInInitializerError
-	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.<clinit>(SSLConnectionSocketFactory.java:151)
-	at org.apache.http.client.fluent.Executor.<clinit>(Executor.java:78)
-	at org.eclipse.userstorage.oauth.OAuthCredentialsProvider.createExecutor(OAuthCredentialsProvider.java:73)
-	at org.eclipse.userstorage.oauth.OAuthCredentialsProvider.<init>(OAuthCredentialsProvider.java:30)
-	at org.eclipse.userstorage.oauth.OAuthCredentialsProvider.<init>(OAuthCredentialsProvider.java:68)
-	at org.eclipse.userstorage.oauth.EclipseOAuthCredentialsProvider.<init>(EclipseOAuthCredentialsProvider.java:138)
-	at org.eclipse.epp.internal.mpc.core.service.MarketplaceStorageService.createStorage(MarketplaceStorageService.java:122)
-	at org.eclipse.epp.internal.mpc.core.service.MarketplaceStorageService.getStorage(MarketplaceStorageService.java:145)
-	at org.eclipse.epp.internal.mpc.core.service.MarketplaceStorageService.activate(MarketplaceStorageService.java:240)
-	at org.eclipse.epp.internal.mpc.core.ServiceLocator.registerStorageService(ServiceLocator.java:345)
-	at org.eclipse.epp.internal.mpc.core.ServiceLocator.registerFavoritesService(ServiceLocator.java:319)
-	at org.eclipse.epp.internal.mpc.core.service.DefaultCatalogService.registerDynamicFavoritesService(DefaultCatalogService.java:81)
-	at org.eclipse.epp.internal.mpc.core.service.DefaultCatalogService.registerDynamicFavoritesService(DefaultCatalogService.java:71)
-	at org.eclipse.epp.internal.mpc.core.service.DefaultCatalogService.listCatalogs(DefaultCatalogService.java:56)
-	at org.eclipse.epp.internal.mpc.ui.commands.AbstractMarketplaceWizardCommand.lambda$0(AbstractMarketplaceWizardCommand.java:169)
-	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
-Caused by: org.apache.commons.logging.LogConfigurationException: The chosen LogFactory implementation does not extend LogFactory. Please check your configuration. (Caused by java.lang.ClassCastException: The application has specified that a custom LogFactory implementation should be used but Class 'org.apache.commons.logging.impl.LogFactoryImpl' cannot be converted to 'org.apache.commons.logging.LogFactory'. The conflict is caused by the presence of multiple LogFactory classes in incompatible classloaders. Background can be found in http://commons.apache.org/logging/tech.html. If you have not explicitly specified a custom LogFactory then it is likely that the container has set one without your knowledge. In this case, consider using the commons-logging-adapters.jar file or specifying the standard LogFactory from the command line. Help can be found @http://commons.apache.org/logging/troubleshooting.html.)
-	at org.apache.commons.logging.LogFactory.createFactory(LogFactory.java:1154)
-	at org.apache.commons.logging.LogFactory$2.run(LogFactory.java:960)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:319)
-	at org.apache.commons.logging.LogFactory.newFactory(LogFactory.java:957)
-	at org.apache.commons.logging.LogFactory.getFactory(LogFactory.java:624)
-	at org.apache.commons.logging.LogFactory.getLog(LogFactory.java:655)
-	at org.apache.http.conn.ssl.AbstractVerifier.<init>(AbstractVerifier.java:61)
-	at org.apache.http.conn.ssl.AllowAllHostnameVerifier.<init>(AllowAllHostnameVerifier.java:44)
-	at org.apache.http.conn.ssl.AllowAllHostnameVerifier.<clinit>(AllowAllHostnameVerifier.java:46)
-	... 16 more
-Caused by: java.lang.ClassCastException: The application has specified that a custom LogFactory implementation should be used but Class 'org.apache.commons.logging.impl.LogFactoryImpl' cannot be converted to 'org.apache.commons.logging.LogFactory'. The conflict is caused by the presence of multiple LogFactory classes in incompatible classloaders. Background can be found in http://commons.apache.org/logging/tech.html. If you have not explicitly specified a custom LogFactory then it is likely that the container has set one without your knowledge. In this case, consider using the commons-logging-adapters.jar file or specifying the standard LogFactory from the command line. Help can be found @http://commons.apache.org/logging/troubleshooting.html.
-	at org.apache.commons.logging.LogFactory.createFactory(LogFactory.java:1108)
-	... 24 more
-
-!ENTRY org.eclipse.jface 4 2 2024-12-17 18:22:38.660
-!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jface".
-!STACK 0
-java.lang.NoClassDefFoundError: org/eclipse/jface/databinding/swt/WidgetProperties
-	at org.eclipse.fx.ide.ui.wizards.AbstractJDTElementPage.createControl(AbstractJDTElementPage.java:109)
-	at org.eclipse.jface.wizard.Wizard.createPageControls(Wizard.java:180)
-	at org.eclipse.jface.wizard.WizardDialog.createPageControls(WizardDialog.java:744)
-	at org.eclipse.jface.wizard.WizardDialog.setWizard(WizardDialog.java:1184)
-	at org.eclipse.jface.wizard.WizardDialog.updateForPage(WizardDialog.java:1235)
-	at org.eclipse.jface.wizard.WizardDialog.lambda$3(WizardDialog.java:1225)
-	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
-	at org.eclipse.jface.wizard.WizardDialog.showPage(WizardDialog.java:1225)
-	at org.eclipse.ui.internal.dialogs.NewWizardSelectionPage.advanceToNextPageOrFinish(NewWizardSelectionPage.java:73)
-	at org.eclipse.ui.internal.dialogs.NewWizardNewPage.lambda$0(NewWizardNewPage.java:336)
-	at org.eclipse.jface.viewers.StructuredViewer$1.run(StructuredViewer.java:779)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
-	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
-	at org.eclipse.jface.viewers.StructuredViewer.fireDoubleClick(StructuredViewer.java:776)
-	at org.eclipse.jface.viewers.AbstractTreeViewer.handleDoubleSelect(AbstractTreeViewer.java:1580)
-	at org.eclipse.jface.viewers.StructuredViewer$4.widgetDefaultSelected(StructuredViewer.java:1205)
-	at org.eclipse.jface.util.OpenStrategy.fireDefaultSelectionEvent(OpenStrategy.java:271)
-	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:328)
-	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4326)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1174)
-	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4124)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3712)
-	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
-	at org.eclipse.jface.window.Window.open(Window.java:799)
-	at org.eclipse.ui.internal.handlers.WizardHandler$New.executeHandler(WizardHandler.java:261)
-	at org.eclipse.ui.internal.handlers.WizardHandler.execute(WizardHandler.java:279)
-	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:277)
-	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:98)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:299)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:233)
-	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:174)
-	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:165)
-	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:488)
-	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:485)
-	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:204)
-	at org.eclipse.ui.internal.handlers.LegacyHandlerService.executeCommand(LegacyHandlerService.java:385)
-	at org.eclipse.ui.internal.actions.CommandAction.runWithEvent(CommandAction.java:141)
-	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:581)
-	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:415)
-	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4326)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1174)
-	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4124)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3712)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
-Caused by: java.lang.ClassNotFoundException: org.eclipse.jface.databinding.swt.WidgetProperties cannot be found by org.eclipse.fx.ide.ui_3.8.0.202204150904
-	at org.eclipse.osgi.internal.loader.BundleLoader.generateException(BundleLoader.java:562)
-	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:557)
-	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:434)
-	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:174)
-	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
-	... 67 more
-
-!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-12-17 18:23:08.474
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-12-18 11:51:03.624
 !MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
 
-!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-12-17 18:23:08.475
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-12-18 11:51:03.626
 !MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
 
-!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-12-17 18:23:08.476
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-12-18 11:51:03.627
 !MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
 
-!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-12-17 18:23:08.476
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-12-18 11:51:03.628
 !MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
 
-!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-12-17 18:23:08.480
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-12-18 11:51:03.634
 !MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
 
-!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-12-17 18:23:08.483
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-12-18 11:51:03.637
 !MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
-!SESSION 2024-12-17 18:44:46.469 -----------------------------------------------
-eclipse.buildId=4.33.0.20240905-0613
-java.version=21.0.4
-java.vendor=Eclipse Adoptium
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
-Framework arguments:  -product org.eclipse.epp.package.jee.product
-Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data C:\Users\HUNG\Downloads\IT\OOP-Labs\Lab05
 
-!ENTRY ch.qos.logback.classic 1 0 2024-12-17 18:44:49.983
-!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
-
-!ENTRY ch.qos.logback.classic 1 0 2024-12-17 18:44:51.821
-!MESSAGE Logback config file: C:\Users\HUNG\Downloads\IT\OOP-Labs\Lab05\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
-
-!ENTRY org.eclipse.egit.ui 2 0 2024-12-17 18:44:56.907
-!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
-user global configuration and to define the default location to store repositories: 'C:\Users\HUNG'. If this is
-not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
-EGit might behave differently since they see different configuration options.
-This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
-!SESSION 2024-12-17 18:46:41.985 -----------------------------------------------
-eclipse.buildId=4.33.0.20240905-0613
-java.version=21.0.4
-java.vendor=Eclipse Adoptium
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
-Framework arguments:  -product org.eclipse.epp.package.jee.product
-Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data C:\Users\HUNG\Downloads\IT\OOP-Labs\Lab05
-
-!ENTRY ch.qos.logback.classic 1 0 2024-12-17 18:46:45.422
-!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
-
-!ENTRY ch.qos.logback.classic 1 0 2024-12-17 18:46:47.080
-!MESSAGE Logback config file: C:\Users\HUNG\Downloads\IT\OOP-Labs\Lab05\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
-
-!ENTRY org.eclipse.egit.ui 2 0 2024-12-17 18:46:53.518
-!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
-user global configuration and to define the default location to store repositories: 'C:\Users\HUNG'. If this is
-not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
-EGit might behave differently since they see different configuration options.
-This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
-
-!ENTRY org.eclipse.epp.mpc.ui 4 0 2024-12-17 18:53:14.413
-!MESSAGE Cannot open Eclipse Marketplace
-!STACK 1
-org.eclipse.core.runtime.CoreException: Cannot install remote marketplace locations: ExceptionInInitializerError
-	at org.eclipse.epp.internal.mpc.ui.commands.AbstractMarketplaceWizardCommand.createConfiguration(AbstractMarketplaceWizardCommand.java:105)
-	at org.eclipse.epp.internal.mpc.ui.commands.MarketplaceWizardCommand.createConfiguration(MarketplaceWizardCommand.java:64)
-	at org.eclipse.epp.internal.mpc.ui.commands.AbstractMarketplaceWizardCommand.execute(AbstractMarketplaceWizardCommand.java:67)
-	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:277)
-	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:98)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:299)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:233)
-	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:174)
-	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:165)
-	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:488)
-	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:485)
-	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:204)
-	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.executeItem(HandledContributionItem.java:444)
-	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.handleWidgetSelection(AbstractContributionItem.java:442)
-	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.lambda$2(AbstractContributionItem.java:464)
-	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4326)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1174)
-	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4124)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3712)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
-Caused by: java.lang.ExceptionInInitializerError
-	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.<clinit>(SSLConnectionSocketFactory.java:151)
-	at org.apache.http.client.fluent.Executor.<clinit>(Executor.java:78)
-	at org.eclipse.userstorage.oauth.OAuthCredentialsProvider.createExecutor(OAuthCredentialsProvider.java:73)
-	at org.eclipse.userstorage.oauth.OAuthCredentialsProvider.<init>(OAuthCredentialsProvider.java:30)
-	at org.eclipse.userstorage.oauth.OAuthCredentialsProvider.<init>(OAuthCredentialsProvider.java:68)
-	at org.eclipse.userstorage.oauth.EclipseOAuthCredentialsProvider.<init>(EclipseOAuthCredentialsProvider.java:138)
-	at org.eclipse.epp.internal.mpc.core.service.MarketplaceStorageService.createStorage(MarketplaceStorageService.java:122)
-	at org.eclipse.epp.internal.mpc.core.service.MarketplaceStorageService.getStorage(MarketplaceStorageService.java:145)
-	at org.eclipse.epp.internal.mpc.core.service.MarketplaceStorageService.activate(MarketplaceStorageService.java:240)
-	at org.eclipse.epp.internal.mpc.core.ServiceLocator.registerStorageService(ServiceLocator.java:345)
-	at org.eclipse.epp.internal.mpc.core.ServiceLocator.registerFavoritesService(ServiceLocator.java:319)
-	at org.eclipse.epp.internal.mpc.core.service.DefaultCatalogService.registerDynamicFavoritesService(DefaultCatalogService.java:81)
-	at org.eclipse.epp.internal.mpc.core.service.DefaultCatalogService.registerDynamicFavoritesService(DefaultCatalogService.java:71)
-	at org.eclipse.epp.internal.mpc.core.service.DefaultCatalogService.listCatalogs(DefaultCatalogService.java:56)
-	at org.eclipse.epp.internal.mpc.ui.commands.AbstractMarketplaceWizardCommand.lambda$0(AbstractMarketplaceWizardCommand.java:169)
-	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
-Caused by: org.apache.commons.logging.LogConfigurationException: The chosen LogFactory implementation does not extend LogFactory. Please check your configuration. (Caused by java.lang.ClassCastException: The application has specified that a custom LogFactory implementation should be used but Class 'org.apache.commons.logging.impl.LogFactoryImpl' cannot be converted to 'org.apache.commons.logging.LogFactory'. The conflict is caused by the presence of multiple LogFactory classes in incompatible classloaders. Background can be found in http://commons.apache.org/logging/tech.html. If you have not explicitly specified a custom LogFactory then it is likely that the container has set one without your knowledge. In this case, consider using the commons-logging-adapters.jar file or specifying the standard LogFactory from the command line. Help can be found @http://commons.apache.org/logging/troubleshooting.html.)
-	at org.apache.commons.logging.LogFactory.createFactory(LogFactory.java:1154)
-	at org.apache.commons.logging.LogFactory$2.run(LogFactory.java:960)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:319)
-	at org.apache.commons.logging.LogFactory.newFactory(LogFactory.java:957)
-	at org.apache.commons.logging.LogFactory.getFactory(LogFactory.java:624)
-	at org.apache.commons.logging.LogFactory.getLog(LogFactory.java:655)
-	at org.apache.http.conn.ssl.AbstractVerifier.<init>(AbstractVerifier.java:61)
-	at org.apache.http.conn.ssl.AllowAllHostnameVerifier.<init>(AllowAllHostnameVerifier.java:44)
-	at org.apache.http.conn.ssl.AllowAllHostnameVerifier.<clinit>(AllowAllHostnameVerifier.java:46)
-	... 16 more
-Caused by: java.lang.ClassCastException: The application has specified that a custom LogFactory implementation should be used but Class 'org.apache.commons.logging.impl.LogFactoryImpl' cannot be converted to 'org.apache.commons.logging.LogFactory'. The conflict is caused by the presence of multiple LogFactory classes in incompatible classloaders. Background can be found in http://commons.apache.org/logging/tech.html. If you have not explicitly specified a custom LogFactory then it is likely that the container has set one without your knowledge. In this case, consider using the commons-logging-adapters.jar file or specifying the standard LogFactory from the command line. Help can be found @http://commons.apache.org/logging/troubleshooting.html.
-	at org.apache.commons.logging.LogFactory.createFactory(LogFactory.java:1108)
-	... 24 more
-Contains: ExceptionInInitializerError
-java.lang.ExceptionInInitializerError
-	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.<clinit>(SSLConnectionSocketFactory.java:151)
-	at org.apache.http.client.fluent.Executor.<clinit>(Executor.java:78)
-	at org.eclipse.userstorage.oauth.OAuthCredentialsProvider.createExecutor(OAuthCredentialsProvider.java:73)
-	at org.eclipse.userstorage.oauth.OAuthCredentialsProvider.<init>(OAuthCredentialsProvider.java:30)
-	at org.eclipse.userstorage.oauth.OAuthCredentialsProvider.<init>(OAuthCredentialsProvider.java:68)
-	at org.eclipse.userstorage.oauth.EclipseOAuthCredentialsProvider.<init>(EclipseOAuthCredentialsProvider.java:138)
-	at org.eclipse.epp.internal.mpc.core.service.MarketplaceStorageService.createStorage(MarketplaceStorageService.java:122)
-	at org.eclipse.epp.internal.mpc.core.service.MarketplaceStorageService.getStorage(MarketplaceStorageService.java:145)
-	at org.eclipse.epp.internal.mpc.core.service.MarketplaceStorageService.activate(MarketplaceStorageService.java:240)
-	at org.eclipse.epp.internal.mpc.core.ServiceLocator.registerStorageService(ServiceLocator.java:345)
-	at org.eclipse.epp.internal.mpc.core.ServiceLocator.registerFavoritesService(ServiceLocator.java:319)
-	at org.eclipse.epp.internal.mpc.core.service.DefaultCatalogService.registerDynamicFavoritesService(DefaultCatalogService.java:81)
-	at org.eclipse.epp.internal.mpc.core.service.DefaultCatalogService.registerDynamicFavoritesService(DefaultCatalogService.java:71)
-	at org.eclipse.epp.internal.mpc.core.service.DefaultCatalogService.listCatalogs(DefaultCatalogService.java:56)
-	at org.eclipse.epp.internal.mpc.ui.commands.AbstractMarketplaceWizardCommand.lambda$0(AbstractMarketplaceWizardCommand.java:169)
-	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
-Caused by: org.apache.commons.logging.LogConfigurationException: The chosen LogFactory implementation does not extend LogFactory. Please check your configuration. (Caused by java.lang.ClassCastException: The application has specified that a custom LogFactory implementation should be used but Class 'org.apache.commons.logging.impl.LogFactoryImpl' cannot be converted to 'org.apache.commons.logging.LogFactory'. The conflict is caused by the presence of multiple LogFactory classes in incompatible classloaders. Background can be found in http://commons.apache.org/logging/tech.html. If you have not explicitly specified a custom LogFactory then it is likely that the container has set one without your knowledge. In this case, consider using the commons-logging-adapters.jar file or specifying the standard LogFactory from the command line. Help can be found @http://commons.apache.org/logging/troubleshooting.html.)
-	at org.apache.commons.logging.LogFactory.createFactory(LogFactory.java:1154)
-	at org.apache.commons.logging.LogFactory$2.run(LogFactory.java:960)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:319)
-	at org.apache.commons.logging.LogFactory.newFactory(LogFactory.java:957)
-	at org.apache.commons.logging.LogFactory.getFactory(LogFactory.java:624)
-	at org.apache.commons.logging.LogFactory.getLog(LogFactory.java:655)
-	at org.apache.http.conn.ssl.AbstractVerifier.<init>(AbstractVerifier.java:61)
-	at org.apache.http.conn.ssl.AllowAllHostnameVerifier.<init>(AllowAllHostnameVerifier.java:44)
-	at org.apache.http.conn.ssl.AllowAllHostnameVerifier.<clinit>(AllowAllHostnameVerifier.java:46)
-	... 16 more
-Caused by: java.lang.ClassCastException: The application has specified that a custom LogFactory implementation should be used but Class 'org.apache.commons.logging.impl.LogFactoryImpl' cannot be converted to 'org.apache.commons.logging.LogFactory'. The conflict is caused by the presence of multiple LogFactory classes in incompatible classloaders. Background can be found in http://commons.apache.org/logging/tech.html. If you have not explicitly specified a custom LogFactory then it is likely that the container has set one without your knowledge. In this case, consider using the commons-logging-adapters.jar file or specifying the standard LogFactory from the command line. Help can be found @http://commons.apache.org/logging/troubleshooting.html.
-	at org.apache.commons.logging.LogFactory.createFactory(LogFactory.java:1108)
-	... 24 more
-!SUBENTRY 1 org.eclipse.epp.mpc.core 4 0 2024-12-17 18:53:14.415
-!MESSAGE Cannot install remote marketplace locations: ExceptionInInitializerError
+!ENTRY org.eclipse.eclemma.core 4 5013 2024-12-18 11:52:05.952
+!MESSAGE Error while dumping coverage data (code 5013).
 !STACK 0
-java.lang.ExceptionInInitializerError
-	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.<clinit>(SSLConnectionSocketFactory.java:151)
-	at org.apache.http.client.fluent.Executor.<clinit>(Executor.java:78)
-	at org.eclipse.userstorage.oauth.OAuthCredentialsProvider.createExecutor(OAuthCredentialsProvider.java:73)
-	at org.eclipse.userstorage.oauth.OAuthCredentialsProvider.<init>(OAuthCredentialsProvider.java:30)
-	at org.eclipse.userstorage.oauth.OAuthCredentialsProvider.<init>(OAuthCredentialsProvider.java:68)
-	at org.eclipse.userstorage.oauth.EclipseOAuthCredentialsProvider.<init>(EclipseOAuthCredentialsProvider.java:138)
-	at org.eclipse.epp.internal.mpc.core.service.MarketplaceStorageService.createStorage(MarketplaceStorageService.java:122)
-	at org.eclipse.epp.internal.mpc.core.service.MarketplaceStorageService.getStorage(MarketplaceStorageService.java:145)
-	at org.eclipse.epp.internal.mpc.core.service.MarketplaceStorageService.activate(MarketplaceStorageService.java:240)
-	at org.eclipse.epp.internal.mpc.core.ServiceLocator.registerStorageService(ServiceLocator.java:345)
-	at org.eclipse.epp.internal.mpc.core.ServiceLocator.registerFavoritesService(ServiceLocator.java:319)
-	at org.eclipse.epp.internal.mpc.core.service.DefaultCatalogService.registerDynamicFavoritesService(DefaultCatalogService.java:81)
-	at org.eclipse.epp.internal.mpc.core.service.DefaultCatalogService.registerDynamicFavoritesService(DefaultCatalogService.java:71)
-	at org.eclipse.epp.internal.mpc.core.service.DefaultCatalogService.listCatalogs(DefaultCatalogService.java:56)
-	at org.eclipse.epp.internal.mpc.ui.commands.AbstractMarketplaceWizardCommand.lambda$0(AbstractMarketplaceWizardCommand.java:169)
-	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
-Caused by: org.apache.commons.logging.LogConfigurationException: The chosen LogFactory implementation does not extend LogFactory. Please check your configuration. (Caused by java.lang.ClassCastException: The application has specified that a custom LogFactory implementation should be used but Class 'org.apache.commons.logging.impl.LogFactoryImpl' cannot be converted to 'org.apache.commons.logging.LogFactory'. The conflict is caused by the presence of multiple LogFactory classes in incompatible classloaders. Background can be found in http://commons.apache.org/logging/tech.html. If you have not explicitly specified a custom LogFactory then it is likely that the container has set one without your knowledge. In this case, consider using the commons-logging-adapters.jar file or specifying the standard LogFactory from the command line. Help can be found @http://commons.apache.org/logging/troubleshooting.html.)
-	at org.apache.commons.logging.LogFactory.createFactory(LogFactory.java:1154)
-	at org.apache.commons.logging.LogFactory$2.run(LogFactory.java:960)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:319)
-	at org.apache.commons.logging.LogFactory.newFactory(LogFactory.java:957)
-	at org.apache.commons.logging.LogFactory.getFactory(LogFactory.java:624)
-	at org.apache.commons.logging.LogFactory.getLog(LogFactory.java:655)
-	at org.apache.http.conn.ssl.AbstractVerifier.<init>(AbstractVerifier.java:61)
-	at org.apache.http.conn.ssl.AllowAllHostnameVerifier.<init>(AllowAllHostnameVerifier.java:44)
-	at org.apache.http.conn.ssl.AllowAllHostnameVerifier.<clinit>(AllowAllHostnameVerifier.java:46)
-	... 16 more
-Caused by: java.lang.ClassCastException: The application has specified that a custom LogFactory implementation should be used but Class 'org.apache.commons.logging.impl.LogFactoryImpl' cannot be converted to 'org.apache.commons.logging.LogFactory'. The conflict is caused by the presence of multiple LogFactory classes in incompatible classloaders. Background can be found in http://commons.apache.org/logging/tech.html. If you have not explicitly specified a custom LogFactory then it is likely that the container has set one without your knowledge. In this case, consider using the commons-logging-adapters.jar file or specifying the standard LogFactory from the command line. Help can be found @http://commons.apache.org/logging/troubleshooting.html.
-	at org.apache.commons.logging.LogFactory.createFactory(LogFactory.java:1108)
-	... 24 more
-!SUBENTRY 2 org.eclipse.epp.mpc.core 4 0 2024-12-17 18:53:14.415
-!MESSAGE ExceptionInInitializerError
-!STACK 0
-java.lang.ExceptionInInitializerError
-	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.<clinit>(SSLConnectionSocketFactory.java:151)
-	at org.apache.http.client.fluent.Executor.<clinit>(Executor.java:78)
-	at org.eclipse.userstorage.oauth.OAuthCredentialsProvider.createExecutor(OAuthCredentialsProvider.java:73)
-	at org.eclipse.userstorage.oauth.OAuthCredentialsProvider.<init>(OAuthCredentialsProvider.java:30)
-	at org.eclipse.userstorage.oauth.OAuthCredentialsProvider.<init>(OAuthCredentialsProvider.java:68)
-	at org.eclipse.userstorage.oauth.EclipseOAuthCredentialsProvider.<init>(EclipseOAuthCredentialsProvider.java:138)
-	at org.eclipse.epp.internal.mpc.core.service.MarketplaceStorageService.createStorage(MarketplaceStorageService.java:122)
-	at org.eclipse.epp.internal.mpc.core.service.MarketplaceStorageService.getStorage(MarketplaceStorageService.java:145)
-	at org.eclipse.epp.internal.mpc.core.service.MarketplaceStorageService.activate(MarketplaceStorageService.java:240)
-	at org.eclipse.epp.internal.mpc.core.ServiceLocator.registerStorageService(ServiceLocator.java:345)
-	at org.eclipse.epp.internal.mpc.core.ServiceLocator.registerFavoritesService(ServiceLocator.java:319)
-	at org.eclipse.epp.internal.mpc.core.service.DefaultCatalogService.registerDynamicFavoritesService(DefaultCatalogService.java:81)
-	at org.eclipse.epp.internal.mpc.core.service.DefaultCatalogService.registerDynamicFavoritesService(DefaultCatalogService.java:71)
-	at org.eclipse.epp.internal.mpc.core.service.DefaultCatalogService.listCatalogs(DefaultCatalogService.java:56)
-	at org.eclipse.epp.internal.mpc.ui.commands.AbstractMarketplaceWizardCommand.lambda$0(AbstractMarketplaceWizardCommand.java:169)
-	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
-Caused by: org.apache.commons.logging.LogConfigurationException: The chosen LogFactory implementation does not extend LogFactory. Please check your configuration. (Caused by java.lang.ClassCastException: The application has specified that a custom LogFactory implementation should be used but Class 'org.apache.commons.logging.impl.LogFactoryImpl' cannot be converted to 'org.apache.commons.logging.LogFactory'. The conflict is caused by the presence of multiple LogFactory classes in incompatible classloaders. Background can be found in http://commons.apache.org/logging/tech.html. If you have not explicitly specified a custom LogFactory then it is likely that the container has set one without your knowledge. In this case, consider using the commons-logging-adapters.jar file or specifying the standard LogFactory from the command line. Help can be found @http://commons.apache.org/logging/troubleshooting.html.)
-	at org.apache.commons.logging.LogFactory.createFactory(LogFactory.java:1154)
-	at org.apache.commons.logging.LogFactory$2.run(LogFactory.java:960)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:319)
-	at org.apache.commons.logging.LogFactory.newFactory(LogFactory.java:957)
-	at org.apache.commons.logging.LogFactory.getFactory(LogFactory.java:624)
-	at org.apache.commons.logging.LogFactory.getLog(LogFactory.java:655)
-	at org.apache.http.conn.ssl.AbstractVerifier.<init>(AbstractVerifier.java:61)
-	at org.apache.http.conn.ssl.AllowAllHostnameVerifier.<init>(AllowAllHostnameVerifier.java:44)
-	at org.apache.http.conn.ssl.AllowAllHostnameVerifier.<clinit>(AllowAllHostnameVerifier.java:46)
-	... 16 more
-Caused by: java.lang.ClassCastException: The application has specified that a custom LogFactory implementation should be used but Class 'org.apache.commons.logging.impl.LogFactoryImpl' cannot be converted to 'org.apache.commons.logging.LogFactory'. The conflict is caused by the presence of multiple LogFactory classes in incompatible classloaders. Background can be found in http://commons.apache.org/logging/tech.html. If you have not explicitly specified a custom LogFactory then it is likely that the container has set one without your knowledge. In this case, consider using the commons-logging-adapters.jar file or specifying the standard LogFactory from the command line. Help can be found @http://commons.apache.org/logging/troubleshooting.html.
-	at org.apache.commons.logging.LogFactory.createFactory(LogFactory.java:1108)
-	... 24 more
-
-!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-12-17 18:53:33.042
-!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
-
-!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-12-17 18:53:33.044
-!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
-
-!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-12-17 18:53:33.045
-!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
-
-!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-12-17 18:53:33.046
-!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
-
-!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-12-17 18:53:33.054
-!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
-
-!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-12-17 18:53:33.057
-!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
-!SESSION 2024-12-17 21:46:40.705 -----------------------------------------------
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1099)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1093)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:71)
+	at org.jacoco.core.data.ExecutionDataReader.read(ExecutionDataReader.java:84)
+	at org.eclipse.eclemma.internal.core.MemoryExecutionDataSource.readFrom(MemoryExecutionDataSource.java:69)
+	at org.eclipse.eclemma.internal.core.launching.AgentServer.run(AgentServer.java:115)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2024-12-18 14:04:15.422 -----------------------------------------------
 eclipse.buildId=4.33.0.20240905-0613
 java.version=21.0.4
 java.vendor=Eclipse Adoptium
@@ -537,13 +59,13 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
 Framework arguments:  -product org.eclipse.epp.package.jee.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data C:\Users\HUNG\Downloads\IT\OOP-Labs\Lab05
 
-!ENTRY ch.qos.logback.classic 1 0 2024-12-17 21:46:42.697
+!ENTRY ch.qos.logback.classic 1 0 2024-12-18 14:05:10.596
 !MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
 
-!ENTRY ch.qos.logback.classic 1 0 2024-12-17 21:46:43.964
+!ENTRY ch.qos.logback.classic 1 0 2024-12-18 14:05:12.753
 !MESSAGE Logback config file: C:\Users\HUNG\Downloads\IT\OOP-Labs\Lab05\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
 
-!ENTRY org.eclipse.egit.ui 2 0 2024-12-17 21:46:48.699
+!ENTRY org.eclipse.egit.ui 2 0 2024-12-18 14:05:17.687
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
 user global configuration and to define the default location to store repositories: 'C:\Users\HUNG'. If this is
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and

@@ -7,6 +7,7 @@ import hust.soict.dsai.aims.media.Book;
 import hust.soict.dsai.aims.media.CompactDisc;
 import hust.soict.dsai.aims.media.DigitalVideoDisc;
 import hust.soict.dsai.aims.media.Media;
+import hust.soict.dsai.aims.screen.StoreScreen;
 import hust.soict.dsai.aims.store.Store;
 
 public class Aims {
@@ -25,14 +26,16 @@ public class Aims {
 		DigitalVideoDisc dvd3 = new DigitalVideoDisc("Aladin", "Animation", 18.99f);
 		store.addMedia(dvd3);
 		
-		store.addMedia(new CompactDisc("Thriller", "Pop", 15.99f, "Michael Jackson"));
-        store.addMedia(new DigitalVideoDisc("Linh Mieu", "Science Fiction", "Viet Nam", 120, 24.95f));
-        store.addMedia(new Book("Harry Potter", "Fantasy", 19.95f));
+		store.addMedia(new CompactDisc("Back in Black", "Rock", 12.99f, "AC/DC"));
+		store.addMedia(new CompactDisc("Dark Side of the Moon", "Progressive Rock", 14.99f, "Pink Floyd"));
+		store.addMedia(new CompactDisc("Abbey Road", "Rock", 13.99f, "The Beatles"));
+		
+		store.addMedia(new Book("The Hobbit", "Fantasy", 15.99f));
+		store.addMedia(new Book("Moby Dick", "Adventure", 14.99f));
+		store.addMedia(new Book("War and Peace", "Historical Fiction", 19.99f));
 		
 
-        cart.addItem(dvd1);
-        cart.addItem(dvd2);
-        cart.addItem(dvd3);
+        
 		// print total cost of the items in the cart
 		/*
 		System.out.print("Total Cost is: ");
@@ -45,8 +48,10 @@ public class Aims {
 		System.out.println(cart.totalCost());
 		*/
 		// Menu
-        clearConsole();
-		showMenu();
+        //clearConsole();
+		//showMenu();
+        
+        StoreScreen storeScreen = new StoreScreen(store);
 	}
 	
 	public static void clearConsole() {

@@ -3,10 +3,12 @@ package hust.soict.dsai.aims.cart;
 import java.util.*;
 
 import hust.soict.dsai.aims.media.Media;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 
 public class Cart {
 	public static final int MAX_NUMBERS_ORDERED = 20;
-	private List<Media> itemsOrdered = new ArrayList<Media>();
+	public ObservableList<Media> itemsOrdered = FXCollections.observableArrayList();
 	
 	public float totalCost() {
 		float totalCost = 0;
@@ -16,14 +18,20 @@ public class Cart {
         return totalCost;
     }
 	
-    public void addItem(Media item) {
-        if (itemsOrdered.size() < MAX_NUMBERS_ORDERED) {
-            itemsOrdered.add(item);
-            System.out.println(item.getTitle() + " has been added to the cart.");
-        } else {
-            System.out.println("The cart is full. Cannot add " + item.getTitle() + ".");
-        }
-    }
+	public void addItem(Media item) {
+	    if (itemsOrdered.size() >= MAX_NUMBERS_ORDERED) {
+	        System.out.println("The cart is full. Cannot add " + item.getTitle() + ".");
+	        return;
+	    }
+	    
+	    if (itemsOrdered.contains(item)) { // Kiểm tra xem item đã có trong giỏ hàng hay chưa
+	        System.out.println(item.getTitle() + " is already in the cart.");
+	        return;
+	    }
+	    
+	    itemsOrdered.add(item); // Thêm vào nếu chưa tồn tại
+	    System.out.println(item.getTitle() + " has been added to the cart.");
+	}
 
     public void removeItem(Media item) {
         if (itemsOrdered.remove(item)) {
@@ -68,5 +76,28 @@ public class Cart {
     public void sortByCost() {
         Collections.sort(itemsOrdered, Media.COMPARE_BY_COST_TITLE);
     }
+    
+    public ObservableList<Media> getItemsOrdered() {
+        return itemsOrdered;
+    }
 	
+    public ObservableList<Media> searchID(int id) {
+        ObservableList<Media> result = FXCollections.observableArrayList();
+        for (Media media : itemsOrdered) {
+            if (media.getId() == id) {
+                result.add(media);
+            }
+        }
+        return result;
+    }
+    
+    public ObservableList<Media> searchTitle(String title) {
+        ObservableList<Media> result = FXCollections.observableArrayList();
+        for (Media media : itemsOrdered) {
+            if (media.getTitle().toLowerCase().contains(title.toLowerCase())) {
+                result.add(media);
+            }
+        }
+        return result;
+    }
 }

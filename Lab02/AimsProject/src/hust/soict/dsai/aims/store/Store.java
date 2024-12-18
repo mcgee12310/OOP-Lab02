@@ -8,7 +8,7 @@ import hust.soict.dsai.aims.media.Media;
 
 public class Store {
 	public static final int MAX_DVDs = 1000005;
-	private List<Media> itemsInStore = new ArrayList<Media>();
+	private ArrayList<Media> itemsInStore = new ArrayList<Media>();
 	public static int qtyDVD = 0;
 	
 	public void addMedia(Media item) {
@@ -56,4 +56,10 @@ public class Store {
 	    }
     	return found;
     }
+    
+    public ArrayList<Media> getItemsInStore() {
+        return itemsInStore;
+    }
+    
+    
 }
