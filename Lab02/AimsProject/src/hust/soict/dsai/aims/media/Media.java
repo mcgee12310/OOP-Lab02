@@ -4,7 +4,7 @@ import java.util.*;
 
 public abstract class Media {
 	
-	private int id;
+	private int id = 0;
 	private String title; 
 	private String category; 
 	private float cost; 

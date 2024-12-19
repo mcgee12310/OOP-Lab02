@@ -1,28 +1,46 @@
 package hust.soict.dsai.javafx;
 
-import java.util.Objects;
+import java.io.IOException;
 
-import javafx.application.Application;
-import javafx.fxml.*;
+import javax.swing.JFrame;
+
+import javafx.application.Platform;
+import javafx.embed.swing.JFXPanel;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.stage.Stage;
 
-public class Painter extends Application {
-    @Override
-    public void start(Stage stage) throws Exception {
-        try {
-            Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("painter.fxml")));
-            Scene scene = new Scene(root);
-            stage.setTitle("Painter");
-            stage.setScene(scene);
-            stage.show();
-        } catch (Exception e) {
-            System.out.println(e.toString());
-        }
-    }
+public class Painter extends JFrame {
+	public Painter()
+	{ 
+		super();		
+		final JFXPanel fxPanel = new JFXPanel();	
+		this.add(fxPanel);
+		
+		this.setTitle("Painter");
+		this.setVisible(true);
+		Platform.runLater(new Runnable() {
+			public void run()
+			{
+				try {
+					FXMLLoader loader = new FXMLLoader(getClass().getResource("painter.fxml"));
+					PainterController controller =
+							  new PainterController();
+					loader.setController(controller);
+					Parent root= loader.load();
+					fxPanel.setScene(new Scene(root));
+					
+				}catch(IOException e)
+				{
+					e.printStackTrace();
+				}
+			}
+		});
 
-    public static void main(String[] args) {
-        launch(args);
-    }
+	} 
+	
+	public static void main(String[] args) {
+		new Painter();
+	}
+
 }

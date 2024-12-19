@@ -3,6 +3,7 @@ package hust.soict.dsai.aims.media;
 import java.util.*;
 
 public class Book extends Media {
+	private static int nbDigitalVideoDiscs = 0;
 	private List<String> authors = new ArrayList<String>();
 	
 	public List<String> getAuthors() {
@@ -43,5 +44,7 @@ public class Book extends Media {
 		this.setTitle(title);
 		this.setCategory(category);
 		this.setCost(cost);
+		this.setId(nbDigitalVideoDiscs);
+		nbDigitalVideoDiscs++;
 	}
 }
